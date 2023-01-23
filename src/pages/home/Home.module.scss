@@ -1,0 +1,58 @@
+.root {
+    // color: red;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: center;
+
+    .title {
+        color: rgba(0, 0, 0, .87);
+        flex-direction: column;
+        flex-grow: 1;
+        font-family: Georgia;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        height: auto;
+        line-height: 49px;
+        padding: 10px;
+        text-align: initial;
+        text-align: start;
+    }
+}
+
+.topstoryContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+
+    .rightStory {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .topstoryContent {
+        flex-direction: column;
+
+        .cardX {
+            width: 100% !important;
+        }
+    }
+
+    .rightStory {
+        padding: 0 !important;
+
+        .card {
+            flex-grow: 1;
+        }
+    }
+}

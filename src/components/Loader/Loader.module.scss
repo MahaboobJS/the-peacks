@@ -1,0 +1,43 @@
+
+@import '../../styles/app';
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 4px solid $white;
+    border-radius: 50%;
+    border-bottom: 4px solid $main-background;
+    border-left: 4px solid $main-background;
+    border-right: 4px solid $main-background;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

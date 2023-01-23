@@ -1,0 +1,141 @@
+@import '../../styles/app';
+
+.root {
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.articlecontent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wrapper {
+    width: 690px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.headLine {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.07px;
+}
+
+.trailText {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.07px;
+    margin-top: 14px;
+}
+
+hr {
+    margin: 20px 0;
+    opacity: .3;
+}
+
+
+.articleFigureCon {
+
+
+    .articleFig {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 267px;
+
+        .articleFigTitle {
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: .3px;
+            line-height: 14px;
+            margin-top: 10px;
+            mix-blend-mode: normal;
+            opacity: .5;
+        }
+
+    }
+}
+
+.mobileVersion {
+    display: none;
+
+}
+
+.desktopVersion {
+    margin-left: 30px;
+    margin-top: 313px;
+    width: 445px;
+}
+
+.notification {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .save {
+        width: 12px;
+        height: 14px;
+        background-image: url('../../assets/bookmarkon-icon@2x.svg');
+        margin-right: 10px;
+
+    }
+
+    .remove {
+        width: 12px;
+        height: 14px;
+        background-image: url('../../assets/bookmarkoff-icon@2x.svg');
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .root {
+        .mobileVersion {
+            margin-top: 30px;
+            display: block;
+
+        }
+        .desktopVersion {
+            margin-left: 30px;
+            margin-top: 313px;
+            width: 445px;
+            display: none;
+        }
+    }
+}
+
+.contentBody {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

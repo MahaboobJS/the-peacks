@@ -1,0 +1,118 @@
+@import '../../styles/app';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    align-items: center;
+
+    .title {
+        color: rgba(0, 0, 0, .87);
+        flex-direction: column;
+        flex-grow: 1;
+        font-family: Georgia;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        height: auto;
+        line-height: 49px;
+        padding: 10px;
+        text-align: initial;
+        text-align: start;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+        max-width: 469px;
+    }
+}
+
+
+@media only screen and  (max-width: 1200px) {
+
+    .header{
+        flex-direction: column;
+    }
+    .topstory-container{
+        max-width: 90%;
+        margin: 30px auto;
+        .topstory-header {
+            flex-direction: column;
+
+            .title{
+                text-align: center;
+            }
+
+            .user-actions-container{
+                margin: 10px auto;
+                .bookmarks-button {
+                    max-width: 158px;
+                }
+            }
+
+        }
+
+        .topstory-content-below{
+            .article-card-container-large{
+                width: 49%;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+}
+
+
+@media only screen and  (max-width: 768px) {
+
+    .header{
+        flex-direction: column;
+    }
+
+    .topstory-container{
+        max-width: 94%;
+        margin: 30px auto;
+
+        .topstory-header {
+            .title{
+                text-align: center;
+            }
+
+            .user-actions-container{
+                margin: 10px auto;
+                .bookmarks-button {
+                    max-width: fit-content;
+                    
+                    span{
+                        display:none;
+                    }
+                }
+            }
+
+        }
+
+        .topstory-content{
+            flex-direction: column;
+
+            .left-story, .right-story{
+                width: 100%;   
+            }
+
+            .right-story{
+                padding: 0px;
+                margin-top:30px;
+
+                .article-card-container-medium , .article-card-container-small{
+                    flex-grow:1;
+                }
+            }
+        }
+
+        .topstory-content-below{
+            .article-card-container-large{
+                width: 100%;
+            }
+        }
+    }
+}

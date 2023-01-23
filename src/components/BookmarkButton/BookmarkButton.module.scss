@@ -1,0 +1,25 @@
+@import "../../styles//app.scss";
+.button{
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px 4px;
+    gap: 6px;
+    height: 30px;
+    left: 841px;
+    top: 189px;
+    color:$white;
+    background: $main-background;
+    border-radius: 4px;
+
+    span{
+        margin-left: 5px;
+    }
+    .bookmarkIcon{
+        width: 12px;
+        height: 14px;
+        background-image: url('../../assets/bookmarkon-icon@2x.svg');
+    }
+}

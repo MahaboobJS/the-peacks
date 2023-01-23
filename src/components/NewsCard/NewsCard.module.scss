@@ -1,0 +1,56 @@
+@import '../../styles/app';
+
+.root {
+    box-shadow: 0 0 8px -2px rgb(0 0 0 / 75%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 3px solid $red;
+}
+
+.noThumbnail {
+    background: #2153a3;
+    background-image: url('../../assets/Logo_White.png');
+    background-position: 50%;
+    background-size: 142px 56px;
+    background-repeat: no-repeat;
+}
+
+.thumbnail {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: 700;
+    height: 138px;
+    justify-content: center;
+    color: $white;
+    padding: 0 10px;
+
+
+    background: $main-background;
+    opacity: .8;
+
+    word-wrap: break-word;
+    overflow: hidden;
+
+    p {
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
+.md {
+    background-position-y: 30px;
+}
+
+.lg {
+    background-position-y: 90px;
+}

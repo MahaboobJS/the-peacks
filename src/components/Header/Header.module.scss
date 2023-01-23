@@ -1,0 +1,33 @@
+@import '../../styles/app';
+
+.root {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1111px;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	.root {
+		margin: 30px auto;
+		max-width: 94%;
+	}
+}
+
+
+.logo {
+    width: 150px;
+    height: 100%;
+}
+
+.searchContainer {
+    bottom: 0;
+    right: 10px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+    input {
+        border-bottom: 2px solid $white;
+    }
+}
